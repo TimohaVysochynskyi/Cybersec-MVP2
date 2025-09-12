@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Work.ua</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            background: #f7f7f7;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header-section {
+            padding: 20px 32px;
+            background: #2980b9;
+            text-align: left;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .content-section {
+            padding: 32px;
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .greeting {
+            margin-bottom: 24px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .success-box {
+            background: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .success-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+
+        .success-text {
+            color: #4caf50;
+        }
+
+        .resume-section {
+            background: #f9f9f9;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .resume-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .resume-details {
+            background: #ffffff;
+            border-radius: 4px;
+            padding: 16px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .detail-row {
+            margin: 8px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .detail-label {
+            color: #666666;
+            font-weight: 500;
+        }
+
+        .detail-value {
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .verification-notice {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 6px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+
+        .notice-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 8px;
+        }
+
+        .notice-text {
+            color: #333333;
+        }
+
+        .urgency-box {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 16px;
+            margin: 24px 0;
+        }
+
+        .urgency-title {
+            font-weight: bold;
+            color: #f44336;
+            margin-bottom: 8px;
+        }
+
+        .urgency-text {
+            color: #d32f2f;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        .work-button {
+            background: #e67e22;
+            color: #ffffff;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 15px;
+            display: inline-block;
+            margin: 8px 0;
+        }
+
+        .work-button:hover {
+            background: #d35400;
+        }
+
+        .link-display {
+            font-size: 12px;
+            color: #666666;
+            margin-top: 12px;
+            word-break: break-all;
+        }
+
+        .stats-section {
+            background: #e3f2fd;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .stats-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 12px;
+        }
+
+        .stats-item {
+            margin: 6px 0;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        .footer-section {
+            background: #f5f5f5;
+            padding: 24px 32px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin: 16px 0;
+        }
+
+        .footer-links a {
+            color: #2980b9;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .contact-info {
+            margin-top: 16px;
+            font-size: 11px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjIwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPldvcmsudWE8L3RleHQ+PC9zdmc+"
+                    alt="Work.ua" class="logo" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="greeting">Вітаємо!</div>
+
+                <div class="success-box">
+                    <div class="success-title">✅ Резюме успішно опубліковано</div>
+                    <div class="success-text">Ваше резюме тепер видно роботодавцям</div>
+                </div>
+
+                <p>
+                    Дякуємо, що скористалися послугами Work.ua! Ваше резюме було успішно опубліковано на нашому сайті
+                    та вже доступне для перегляду потенційними роботодавцями.
+                </p>
+
+                <div class="resume-section">
+                    <div class="resume-title">Деталі вашого резюме:</div>
+                    <div class="resume-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Посада:</span>
+                            <span class="detail-value">Frontend розробник</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Зарплата:</span>
+                            <span class="detail-value">від 25,000 грн</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Досвід:</span>
+                            <span class="detail-value">2-5 років</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Місто:</span>
+                            <span class="detail-value">Київ</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Дата публікації:</span>
+                            <span class="detail-value">09 вересня 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verification-notice">
+                    <div class="notice-title">📞 Підтвердження контактних даних</div>
+                    <div class="notice-text">
+                        Для активації всіх функцій профілю та підвищення довіри роботодавців, необхідно підтвердити
+                        ваші контактні дані: номер телефону та електронну адресу.
+                    </div>
+                </div>
+
+                <div class="urgency-box">
+                    <div class="urgency-title">⏰ Термінове повідомлення</div>
+                    <div class="urgency-text">
+                        Залишилось 24 години для підтвердження контактів. Без підтвердження ваше резюме може
+                        бути приховано з результатів пошуку!
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stats-title">Статистика вашого резюме:</div>
+                    <div class="stats-item">🔍 Переглядів: 0 (очікує активації)</div>
+                    <div class="stats-item">📧 Відгуків від роботодавців: 0</div>
+                    <div class="stats-item">📊 Рейтинг профілю: 45% (потребує підтвердження)</div>
+                    <div class="stats-item">⭐ Статус: Неверифікований</div>
+                </div>
+
+                <p>
+                    <strong>Для підтвердження контактних даних необхідно:</strong><br>
+                    1. Перейти до особистого кабінету<br>
+                    2. Підтвердити номер телефону через SMS<br>
+                    3. Підтвердити email-адресу<br>
+                    4. Завершити верифікацію профілю
+                </p>
+
+                <div class="button-section">
+                    <p style="margin-bottom: 16px; color: #333; font-weight: bold;">Підтвердити контактні дані:</p>
+                    <a href="https://workua-confirm.example.com/verify-contacts" class="work-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Завершити верифікацію
+                    </a>
+                    <div class="link-display">
+                        Посилання: work.ua/cabinet/verification
+                    </div>
+                </div>
+
+                <p>
+                    <strong>Переваги верифікованого профілю:</strong><br>
+                    • Резюме відображається вище в результатах пошуку<br>
+                    • Більше відгуків від роботодавців<br>
+                    • Доступ до преміум-функцій<br>
+                    • Підвищена довіра роботодавців<br>
+                    • Пріоритетна підтримка
+                </p>
+
+                <p>
+                    Нагадуємо, що після верифікації ви зможете отримувати сповіщення про нові вакансії,
+                    які відповідають вашому профілю.
+                </p>
+
+                <p>
+                    Бажаємо успіхів у пошуку роботи!
+                </p>
+
+                <p>
+                    З повагою,<br>
+                    Команда Work.ua
+                </p>
+
+                <div style="margin-top: 24px; font-size: 12px; color: #666;">
+                    ID резюме: WU-2025-091567<br>
+                    Дата створення профілю: 09 вересня 2025, 14:30
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-links">
+                    <a href="https://work-ua.example.com" target="_blank" rel="noopener noreferrer">Work.ua</a>
+                    <a href="https://work-ua.example.com/help" target="_blank" rel="noopener noreferrer">Допомога</a>
+                    <a href="https://work-ua.example.com/rules" target="_blank" rel="noopener noreferrer">Правила
+                        сайту</a>
+                </div>
+
+                © 2025 Work.ua. Всі права захищені.<br>
+                Україна, 01001, м. Київ, вул. Хрещатик, 44
+
+                <div class="contact-info">
+                    Служба підтримки: (044) 492-15-45<br>
+                    E-mail: info@work.ua | Сайт: work.ua
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: true -->

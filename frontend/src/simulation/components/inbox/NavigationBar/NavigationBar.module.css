@@ -1,0 +1,248 @@
+.nav {
+  width: 100%;
+  height: 70px;
+  background-color: #cfd8f6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.button {
+  padding: 14px 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #3440e7;
+  font-size: 17px;
+  border-radius: 8px;
+  width: calc(18% - 8px);
+}
+.button span {
+  position: relative;
+  top: 2px;
+}
+.count {
+  margin-left: auto;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.active {
+  background-color: #7abbf1;
+}
+.icon {
+  height: 22px;
+}
+
+.progressWrapper {
+  width: calc(18% - 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background-color: rgba(62, 121, 238, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(62, 121, 238, 0.3);
+  outline: none;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressText {
+  font-size: 17px;
+  color: #3440e7;
+  font-weight: 400;
+}
+
+.percentage {
+  font-size: 17px;
+  color: #3440e7;
+  font-weight: 500;
+}
+
+.searchWrapper {
+  width: calc(28% - 8px);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  position: absolute;
+  left: 30px;
+  height: 22px;
+}
+.search {
+  width: 100%;
+  padding: 10px 40px;
+  padding-left: 60px;
+  border: 1px solid #641ad0;
+  border-radius: 8px;
+  background-color: #d4c6fb;
+  font-size: 17px;
+  color: #3440e7;
+  outline: none;
+}
+.search::placeholder {
+  color: #3440e7;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .nav {
+    height: 72px;
+    padding: 18px;
+    gap: 6px;
+  }
+  .button {
+    padding: 12px 32px;
+    gap: 14px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+  .icon {
+    height: 20px;
+  }
+  .progressWrapper {
+    padding: 9px 10px;
+    gap: 3px;
+    border-radius: 7px;
+  }
+  .progressText {
+    font-size: 16px;
+  }
+  .percentage {
+    font-size: 16px;
+  }
+  .searchIcon {
+    left: 26px;
+    height: 18px;
+  }
+  .search {
+    padding: 9px 32px;
+    padding-left: 50px;
+    border-radius: 7px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .nav {
+    height: 68px;
+    padding: 16px;
+    gap: 6px;
+  }
+  .button {
+    padding: 10px 28px;
+    gap: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+  .icon {
+    height: 18px;
+  }
+  .progressWrapper {
+    padding: 8px 9px;
+    gap: 3px;
+    border-radius: 6px;
+  }
+  .progressText {
+    font-size: 15px;
+  }
+  .percentage {
+    font-size: 15px;
+  }
+  .searchIcon {
+    left: 22px;
+    height: 16px;
+  }
+  .search {
+    padding: 8px 28px;
+    padding-left: 44px;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    height: 64px;
+    padding: 14px;
+    gap: 4px;
+  }
+  .button {
+    padding: 8px 24px;
+    gap: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  .icon {
+    height: 16px;
+  }
+  .progressWrapper {
+    padding: 7px 8px;
+    gap: 2px;
+    border-radius: 5px;
+  }
+  .progressText {
+    font-size: 14px;
+  }
+  .percentage {
+    font-size: 14px;
+  }
+  .searchIcon {
+    left: 18px;
+    height: 14px;
+  }
+  .search {
+    padding: 7px 24px;
+    padding-left: 38px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    height: 60px;
+    padding: 12px;
+    gap: 4px;
+  }
+  .button {
+    padding: 6px 20px;
+    gap: 8px;
+    font-size: 13px;
+    border-radius: 4px;
+  }
+  .icon {
+    height: 14px;
+  }
+  .progressWrapper {
+    padding: 6px 7px;
+    gap: 2px;
+    border-radius: 4px;
+  }
+  .progressText {
+    font-size: 13px;
+  }
+  .percentage {
+    font-size: 13px;
+  }
+  .searchIcon {
+    left: 16px;
+    height: 12px;
+  }
+  .search {
+    padding: 6px 20px;
+    padding-left: 34px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+}

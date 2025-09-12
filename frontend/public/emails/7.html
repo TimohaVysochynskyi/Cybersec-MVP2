@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Spotify</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #000000;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #000000;
+        }
+
+        .header-section {
+            padding: 32px 40px 24px 40px;
+            background: #1DB954;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .content-section {
+            padding: 40px;
+            font-size: 16px;
+            color: #ffffff;
+            line-height: 1.6;
+            background: #000000;
+        }
+
+        .greeting {
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .main-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1DB954;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .payment-box {
+            background: #121212;
+            border: 1px solid #1DB954;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .payment-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1DB954;
+            margin-bottom: 16px;
+        }
+
+        .amount {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 16px 0;
+        }
+
+        .details-section {
+            background: #121212;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .detail-row {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 8px;
+        }
+
+        .detail-label {
+            color: #b3b3b3;
+            font-weight: 500;
+        }
+
+        .detail-value {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .features-section {
+            background: #121212;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .features-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1DB954;
+            margin-bottom: 16px;
+        }
+
+        .feature-item {
+            margin: 12px 0;
+            padding-left: 24px;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .feature-item:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1DB954;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #121212;
+            border-radius: 8px;
+        }
+
+        .spotify-button {
+            background: #1DB954;
+            color: #000000;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-block;
+            margin: 8px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .spotify-button:hover {
+            background: #1ed760;
+        }
+
+        .help-section {
+            background: #121212;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .help-title {
+            font-weight: 600;
+            color: #1DB954;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .help-item {
+            margin: 8px 0;
+            color: #b3b3b3;
+            font-size: 14px;
+        }
+
+        .help-item a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+
+        .footer-section {
+            background: #121212;
+            padding: 32px 40px;
+            font-size: 12px;
+            color: #b3b3b3;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: #1DB954;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .unsubscribe {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #666666;
+        }
+
+        .unsubscribe a {
+            color: #1DB954;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjE1IiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlNwb3RpZnk8L3RleHQ+PC9zdmc+"
+                    alt="Spotify" class="logo" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="greeting">Привіт!</div>
+
+                <div class="main-title">Оплата успішно проведена</div>
+
+                <p>Дякуємо за продовження підписки Spotify Premium! Ваш платіж успішно оброблено, і ви можете
+                    продовжувати насолоджуватися усіма перевагами Premium без реклами.</p>
+
+                <div class="payment-box">
+                    <div class="payment-title">Підтвердження платежу</div>
+                    <div class="amount">149 грн</div>
+                    <div style="color: #b3b3b3; font-size: 14px;">Spotify Premium Individual</div>
+                </div>
+
+                <div class="details-section">
+                    <div style="font-weight: bold; margin-bottom: 16px; color: #1DB954;">Деталі підписки:</div>
+                    <div class="detail-row">
+                        <span class="detail-label">План:</span>
+                        <span class="detail-value">Premium Individual</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Дата платежу:</span>
+                        <span class="detail-value">09 вересня 2025</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Наступний платіж:</span>
+                        <span class="detail-value">09 жовтня 2025</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Спосіб оплати:</span>
+                        <span class="detail-value">Картка •••• 4567</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Номер транзакції:</span>
+                        <span class="detail-value">SPT-2025-091234</span>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <div class="features-title">Ваші переваги Premium:</div>
+                    <div class="feature-item">Музика без реклами</div>
+                    <div class="feature-item">Завантаження для офлайн-прослуховування</div>
+                    <div class="feature-item">Необмежена кількість перемотувань</div>
+                    <div class="feature-item">Висока якість звуку</div>
+                    <div class="feature-item">Слухання на будь-якому пристрої</div>
+                    <div class="feature-item">Spotify Connect для всіх пристроїв</div>
+                </div>
+
+                <div class="button-section">
+                    <p style="margin-bottom: 16px; color: #ffffff; font-weight: bold;">Керування підпискою:</p>
+                    <a href="https://www.spotify.com/account" class="spotify-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Переглянути акаунт
+                    </a>
+                </div>
+
+                <div class="help-section">
+                    <div class="help-title">Потрібна допомога?</div>
+                    <div class="help-item">
+                        • <a href="https://support.spotify.com" target="_blank" rel="noopener noreferrer">Центр
+                            підтримки Spotify</a>
+                    </div>
+                    <div class="help-item">
+                        • <a href="https://www.spotify.com/account/subscription" target="_blank"
+                            rel="noopener noreferrer">Керування підпискою</a>
+                    </div>
+                    <div class="help-item">
+                        • <a href="https://www.spotify.com/premium" target="_blank" rel="noopener noreferrer">Дізнатися
+                            більше про Premium</a>
+                    </div>
+                </div>
+
+                <p>
+                    Якщо у вас є питання щодо цього платежу або потрібна допомога з вашим акаунтом, відвідайте наш Центр
+                    підтримки.
+                </p>
+
+                <p>
+                    Продовжуйте слухати!<br>
+                    Команда Spotify
+                </p>
+
+                <div style="margin-top: 24px; font-size: 12px; color: #666666;">
+                    Це автоматичне повідомлення про оплату. Квитанцію збережено у вашому акаунті.
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-links">
+                    <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a>
+                    <a href="https://support.spotify.com" target="_blank" rel="noopener noreferrer">Підтримка</a>
+                    <a href="https://www.spotify.com/privacy" target="_blank"
+                        rel="noopener noreferrer">Конфіденційність</a>
+                    <a href="https://www.spotify.com/legal" target="_blank" rel="noopener noreferrer">Умови</a>
+                </div>
+
+                © 2025 Spotify AB. Всі права захищені.<br>
+                Spotify AB, Regeringsgatan 19, 111 53 Stockholm, Sweden
+
+                <div class="unsubscribe">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Керування налаштуваннями сповіщень</a> |
+                    <a href="#" target="_blank" rel="noopener noreferrer">Відписатися</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: false -->

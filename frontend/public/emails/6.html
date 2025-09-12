@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Glovo</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f8f9fa;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header-section {
+            padding: 24px 32px 16px 32px;
+            background: #FFC244;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            filter: brightness(0);
+        }
+
+        .content-section {
+            padding: 32px;
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .greeting {
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        .success-box {
+            background: #fff8e1;
+            border: 2px solid #FFC244;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .success-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        .success-subtitle {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .order-section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .order-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 16px;
+        }
+
+        .order-number {
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFC244;
+            background: #ffffff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .restaurant-info {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid #e0e0e0;
+        }
+
+        .restaurant-name {
+            font-weight: bold;
+            color: #333333;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .restaurant-address {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .delivery-info {
+            background: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .delivery-title {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+
+        .delivery-details {
+            color: #333333;
+            font-size: 14px;
+        }
+
+        .order-items {
+            margin: 20px 0;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+
+        .item-name {
+            color: #333333;
+        }
+
+        .item-price {
+            color: #333333;
+            font-weight: 500;
+        }
+
+        .total-section {
+            background: #fff8e1;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px 0;
+        }
+
+        .total-label {
+            color: #333333;
+        }
+
+        .total-value {
+            color: #333333;
+            font-weight: 500;
+        }
+
+        .total-final {
+            font-weight: bold;
+            font-size: 16px;
+            border-top: 1px solid #FFC244;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .glovo-button {
+            background: #FFC244;
+            color: #333333;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 15px;
+            display: inline-block;
+            margin: 8px 12px;
+        }
+
+        .glovo-button:hover {
+            background: #ffb300;
+        }
+
+        .rating-section {
+            background: #f0f8ff;
+            border: 1px solid #2196f3;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .rating-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .rating-text {
+            color: #333333;
+            margin-bottom: 16px;
+        }
+
+        .stars {
+            font-size: 24px;
+            color: #FFC244;
+            margin: 8px 0;
+        }
+
+        .footer-section {
+            background: #f5f5f5;
+            padding: 24px 32px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin: 16px 0;
+        }
+
+        .footer-links a {
+            color: #FFC244;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .unsubscribe {
+            margin-top: 16px;
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .unsubscribe a {
+            color: #FFC244;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjIwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iYmxhY2siPkdsb3ZvPC90ZXh0Pjwvc3ZnPg=="
+                    alt="Glovo" class="logo" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="greeting">Привіт, Олена! 👋</div>
+
+                <div class="success-box">
+                    <div class="success-title">🎉 Замовлення доставлено!</div>
+                    <div class="success-subtitle">Сподіваємося, вам все сподобалося</div>
+                </div>
+
+                <p>
+                    Ваше замовлення успішно доставлено кур'єром Глово. Дякуємо, що обираєте нас для швидкої та зручної
+                    доставки!
+                </p>
+
+                <div class="order-section">
+                    <div class="order-title">Деталі замовлення:</div>
+                    <div class="order-number">Замовлення #GLV-20250909-4567</div>
+
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">🍕 Піца Челентано</div>
+                        <div class="restaurant-address">вул. Володимирська, 24, Київ</div>
+                    </div>
+
+                    <div class="order-items">
+                        <div class="item-row">
+                            <span class="item-name">Піца Маргарита (велика)</span>
+                            <span class="item-price">280 грн</span>
+                        </div>
+                        <div class="item-row">
+                            <span class="item-name">Coca-Cola 0.5л</span>
+                            <span class="item-price">45 грн</span>
+                        </div>
+                        <div class="item-row">
+                            <span class="item-name">Картопля фрі</span>
+                            <span class="item-price">85 грн</span>
+                        </div>
+                    </div>
+
+                    <div class="total-section">
+                        <div class="total-row">
+                            <span class="total-label">Страви:</span>
+                            <span class="total-value">410 грн</span>
+                        </div>
+                        <div class="total-row">
+                            <span class="total-label">Доставка:</span>
+                            <span class="total-value">39 грн</span>
+                        </div>
+                        <div class="total-row">
+                            <span class="total-label">Сервісний збір:</span>
+                            <span class="total-value">15 грн</span>
+                        </div>
+                        <div class="total-row total-final">
+                            <span class="total-label">Загалом:</span>
+                            <span class="total-value">464 грн</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="delivery-title">✅ Інформація про доставку:</div>
+                    <div class="delivery-details">
+                        <strong>Час доставки:</strong> 09 вересня 2025, 19:45<br>
+                        <strong>Кур'єр:</strong> Андрій (⭐ 4.9)<br>
+                        <strong>Адреса:</strong> вул. Хрещатик, 15, кв. 24<br>
+                        <strong>Спосіб оплати:</strong> Картка онлайн
+                    </div>
+                </div>
+
+                <div class="rating-section">
+                    <div class="rating-title">Як вам замовлення?</div>
+                    <div class="rating-text">Поділіться вашими враженнями про якість їжі та роботу кур'єра</div>
+                    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                </div>
+
+                <div class="button-section">
+                    <a href="https://glovoapp.com/order-review" class="glovo-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Залишити відгук
+                    </a>
+                    <a href="https://glovoapp.com/repeat-order" class="glovo-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Повторити замовлення
+                    </a>
+                </div>
+
+                <p>
+                    <strong>Потрібна допомога?</strong><br>
+                    Якщо у вас є питання щодо замовлення або якість не відповідає очікуванням, зв'яжіться з нашою
+                    службою підтримки через додаток або на сайті.
+                </p>
+
+                <p>
+                    Дякуємо, що обираєте Glovo! До зустрічі у наступному замовленні 🧡
+                </p>
+
+                <p>
+                    З любов'ю,<br>
+                    Команда Glovo Ukraine
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-links">
+                    <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer">Glovo</a>
+                    <a href="https://glovoapp.com/help" target="_blank" rel="noopener noreferrer">Допомога</a>
+                    <a href="https://glovoapp.com/careers" target="_blank" rel="noopener noreferrer">Кар'єра</a>
+                    <a href="https://glovoapp.com/partners" target="_blank" rel="noopener noreferrer">Партнерство</a>
+                </div>
+
+                © 2025 Glovo. Всі права захищені.<br>
+                Україна, м. Київ, БЦ "Гулівер", вул. Спортивна площа, 1а
+
+                <div class="unsubscribe">
+                    Гаряча лінія: 0 800 750 810<br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Керування підпискою</a> |
+                    <a href="#" target="_blank" rel="noopener noreferrer">Політика конфіденційності</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: false -->

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1",
+    "from": "Phishmail Platform",
+    "fromEmail": "no-reply@phishmail.com",
+    "subject": "Вітаємо у тренажері з фішингових листів!",
+    "date": "2025-08-17T09:15:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/1.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "2",
+    "from": "Amazon",
+    "fromEmail": "payments@amazon-security.example.com",
+    "subject": "Невдала спроба оплати — оновіть платіжні дані",
+    "date": "2025-09-09T07:15:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/2.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "3",
+    "from": "Work.ua",
+    "fromEmail": "support@work-ua.example.com",
+    "subject": "Резюме успішно опубліковано — підтвердіть контактні дані",
+    "date": "2025-09-09T07:30:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/3.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "4",
+    "from": "Державна податкова служба",
+    "fromEmail": "info@taxgov-ukraine.example.com",
+    "subject": "Повідомлення про неврегульований податок — дія до 3 днів",
+    "date": "2025-09-09T07:45:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/4.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "5",
+    "from": "Instagram",
+    "fromEmail": "security@instagrarn-support.example.com",
+    "subject": "Підозріла активність на вашому акаунті — захистіть зараз",
+    "date": "2025-09-09T08:00:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/5.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "6",
+    "from": "Glovo",
+    "fromEmail": "no-reply@glovoapp.com",
+    "subject": "Ваш замовлення доставлене — поставте оцінку кур'єру",
+    "date": "2025-09-09T08:15:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/6.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "7",
+    "from": "Spotify",
+    "fromEmail": "service@spotify.com",
+    "subject": "Оновлення підписки: ваш платіж пройшов успішно",
+    "date": "2025-09-09T08:30:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/7.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "8",
+    "from": "Нова Пошта",
+    "fromEmail": "no-reply@novaposhta.ua",
+    "subject": "Ваш відправлення № 20450012345678 доставлено — заберіть сьогодні",
+    "date": "2025-09-09T08:45:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/8.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "9",
+    "from": "PrivatBank",
+    "fromEmail": "no-reply@privatbakk-example.com",
+    "subject": "Терміново: заблоковано вашу картку — підтвердіть особистість",
+    "date": "2025-09-09T09:00:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/9.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  },
+  {
+    "id": "10",
+    "from": "Google Support",
+    "fromEmail": "security-team@google.security.com",
+    "subject": "Ваш акаунт буде заблоковано!",
+    "date": "2025-08-17T09:20:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/10.html",
+    "category": "inbox",
+    "logoPath": "/logos/google.png"
+  },
+  {
+    "id": "11",
+    "from": "Steam",
+    "fromEmail": "noreply@steampowered.com",
+    "subject": "Ваш друг надіслав вам запрошення",
+    "date": "2025-08-17T09:25:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/11.html",
+    "category": "inbox",
+    "logoPath": "/logos/steam.png"
+  },
+  {
+    "id": "12",
+    "from": "PayPal Security",
+    "fromEmail": "security@paipal.com",
+    "subject": "Підозріла активність на вашому рахунку",
+    "date": "2025-08-17T09:30:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/12.html",
+    "category": "inbox",
+    "logoPath": "/logos/paypal.png"
+  },
+  {
+    "id": "13",
+    "from": "Epic Games",
+    "fromEmail": "official@epicgames.support.com",
+    "subject": "Завантажте наш новий лаунчер!",
+    "date": "2025-08-17T09:40:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/13.html",
+    "category": "inbox",
+    "logoPath": "/logos/epic-games.png"
+  },
+  {
+    "id": "14",
+    "from": "Discord",
+    "fromEmail": "noreply@discord.com",
+    "subject": "Нові оновлення сервісу",
+    "date": "2025-08-17T09:50:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/14.html",
+    "category": "inbox",
+    "logoPath": "/logos/discord.png"
+  },
+  {
+    "id": "15",
+    "from": "Netflix",
+    "fromEmail": "billing@netflix.account.com",
+    "subject": "Проблема з вашим платежем",
+    "date": "2025-08-17T10:00:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/15.html",
+    "category": "inbox",
+    "logoPath": "/logos/netflix.png"
+  },
+  {
+    "id": "16",
+    "from": "GitHub",
+    "fromEmail": "noreply@github.com",
+    "subject": "Нова авторизація успішна",
+    "date": "2025-08-17T10:15:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/16.html",
+    "category": "inbox",
+    "logoPath": "/logos/github.png"
+  },
+  {
+    "id": "17",
+    "from": "Facebook",
+    "fromEmail": "security-alert@facebook.security.com",
+    "subject": "Ваш акаунт буде видалено!",
+    "date": "2025-08-17T10:30:00Z",
+    "isPhishing": true,
+    "contentPath": "/emails/17.html",
+    "category": "inbox",
+    "logoPath": "/logos/facebook.png"
+  },
+  {
+    "id": "18",
+    "from": "Phishmail Platform",
+    "fromEmail": "no-reply@cybersec-demo.com",
+    "subject": "✅ Симуляцію завершено!",
+    "date": "2025-08-17T11:00:00Z",
+    "isPhishing": false,
+    "contentPath": "/emails/18.html",
+    "category": "inbox",
+    "logoPath": "/logos/phishmail.png"
+  }
+]

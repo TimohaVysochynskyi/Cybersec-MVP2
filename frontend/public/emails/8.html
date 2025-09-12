@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Нова Пошта</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', Arial, sans-serif;
+            background: #f8f9fa;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header-section {
+            padding: 24px 32px 16px 32px;
+            background: #F23C31;
+            text-align: left;
+        }
+
+        .logo {
+            width: 160px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .content-section {
+            padding: 32px;
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .greeting {
+            margin-bottom: 24px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .status-box {
+            background: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .status-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 8px;
+        }
+
+        .status-text {
+            color: #4caf50;
+            font-weight: 500;
+        }
+
+        .tracking-section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .tracking-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #F23C31;
+            margin-bottom: 16px;
+        }
+
+        .tracking-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333333;
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 4px;
+            border: 2px solid #F23C31;
+            text-align: center;
+            margin: 16px 0;
+        }
+
+        .details-section {
+            background: #f9f9f9;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .detail-row {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #ddd;
+            padding-bottom: 8px;
+        }
+
+        .detail-label {
+            color: #666666;
+            font-weight: 500;
+        }
+
+        .detail-value {
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .pickup-info {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .pickup-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .pickup-details {
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .novaposhta-button {
+            background: #F23C31;
+            color: #ffffff;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            display: inline-block;
+            margin: 8px 0;
+        }
+
+        .novaposhta-button:hover {
+            background: #d32f2f;
+        }
+
+        .schedule-section {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 16px;
+            margin: 24px 0;
+        }
+
+        .schedule-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        .schedule-text {
+            color: #333333;
+            font-size: 14px;
+        }
+
+        .footer-section {
+            background: #f5f5f5;
+            padding: 24px 32px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin: 16px 0;
+        }
+
+        .footer-links a {
+            color: #F23C31;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .unsubscribe {
+            margin-top: 16px;
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .unsubscribe a {
+            color: #F23C31;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTYwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjEwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPk5vdmEgUG9zaHRhPC90ZXh0Pjwvc3ZnPg=="
+                    alt="Нова Пошта" class="logo" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="greeting">Вітаємо!</div>
+
+                <div class="status-box">
+                    <div class="status-title">✅ ВІДПРАВЛЕННЯ ДОСТАВЛЕНО</div>
+                    <div class="status-text">Ваша посилка готова до отримання</div>
+                </div>
+
+                <p>
+                    Ваше відправлення успішно доставлено у відділення Нової Пошти. Будь ласка, заберіть його сьогодні
+                    під час робочих годин відділення.
+                </p>
+
+                <div class="tracking-section">
+                    <div class="tracking-title">Номер для відстежування:</div>
+                    <div class="tracking-number">20450012345678</div>
+                </div>
+
+                <div class="details-section">
+                    <div style="font-weight: bold; margin-bottom: 16px; color: #333;">Деталі відправлення:</div>
+                    <div class="detail-row">
+                        <span class="detail-label">Відправник:</span>
+                        <span class="detail-value">Інтернет-магазин "TechStore"</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Отримувач:</span>
+                        <span class="detail-value">Іван Петренко</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Вага:</span>
+                        <span class="detail-value">1.2 кг</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Оголошена вартість:</span>
+                        <span class="detail-value">2,500 грн</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Час доставки:</span>
+                        <span class="detail-value">09 вересня 2025, 11:30</span>
+                    </div>
+                </div>
+
+                <div class="pickup-info">
+                    <div class="pickup-title">📍 Місце отримання:</div>
+                    <div class="pickup-details">
+                        <strong>Відділення №247</strong><br>
+                        м. Київ, вул. Хрещатик, 15<br>
+                        (біля метро "Хрещатик")
+                        <br><br>
+                        <strong>Контактний телефон:</strong> (044) 123-45-67
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <div class="schedule-title">Графік роботи відділення:</div>
+                    <div class="schedule-text">
+                        Пн-Пт: 08:00 - 21:00<br>
+                        Сб-Нд: 09:00 - 18:00<br>
+                        Без вихідних
+                    </div>
+                </div>
+
+                <div class="button-section">
+                    <p style="margin-bottom: 16px; color: #333; font-weight: bold;">Відстежити статус онлайн:</p>
+                    <a href="https://novaposhta.ua/tracking" class="novaposhta-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Відкрити деталі відправлення
+                    </a>
+                </div>
+
+                <p>
+                    <strong>Що потрібно мати при собі:</strong><br>
+                    • Документ, що посвідчує особу<br>
+                    • SMS-повідомлення з кодом отримання<br>
+                    • Номер ТТН: 20450012345678
+                </p>
+
+                <p>
+                    Нагадуємо, що безкоштовне зберігання відправлення у відділенні становить 5 робочих днів.
+                    За додаткове зберігання стягується плата згідно з діючими тарифами.
+                </p>
+
+                <p>
+                    Дякуємо, що обираєте Нову Пошту!
+                </p>
+
+                <p>
+                    З повагою,<br>
+                    Команда Нової Пошти
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-links">
+                    <a href="https://novaposhta.ua" target="_blank" rel="noopener noreferrer">Офіційний сайт</a>
+                    <a href="https://novaposhta.ua/office" target="_blank" rel="noopener noreferrer">Знайти
+                        відділення</a>
+                    <a href="https://novaposhta.ua/help" target="_blank" rel="noopener noreferrer">Підтримка</a>
+                    <a href="https://novaposhta.ua/calculator" target="_blank" rel="noopener noreferrer">Калькулятор
+                        вартості</a>
+                </div>
+
+                © 2025 ТОВ «Нова Пошта». Всі права захищені.<br>
+                Україна, 02660, м. Київ, вул. Сім'ї Кульженків, 2
+
+                <div class="unsubscribe">
+                    Гаряча лінія: 0 800 500 609 (безкоштовно)<br>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Відписатися від розсилки</a> |
+                    <a href="#" target="_blank" rel="noopener noreferrer">Політика конфіденційності</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: false -->

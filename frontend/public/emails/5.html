@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Instagram</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #fafafa;
+            line-height: 1.6;
+            color: #262626;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header-section {
+            padding: 24px 32px 16px 32px;
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            filter: brightness(0) invert(1);
+        }
+
+        .content-section {
+            padding: 32px;
+            font-size: 15px;
+            color: #262626;
+            line-height: 1.6;
+        }
+
+        .greeting {
+            margin-bottom: 24px;
+            font-size: 16px;
+            color: #262626;
+        }
+
+        .alert-box {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .alert-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #f44336;
+            margin-bottom: 12px;
+        }
+
+        .alert-text {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .security-notice {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+
+        .notice-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 8px;
+        }
+
+        .activity-section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .activity-title {
+            font-weight: bold;
+            color: #262626;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .activity-item {
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px dotted #dbdbdb;
+            color: #262626;
+            font-size: 14px;
+        }
+
+        .suspicious {
+            color: #f44336;
+            font-weight: 500;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 24px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .instagram-button {
+            background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            color: #ffffff;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            display: inline-block;
+            margin: 8px 0;
+        }
+
+        .instagram-button:hover {
+            opacity: 0.9;
+        }
+
+        .link-mismatch {
+            font-size: 12px;
+            color: #666666;
+            margin-top: 12px;
+            word-break: break-all;
+        }
+
+        .urgent-notice {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 16px;
+            margin: 24px 0;
+        }
+
+        .urgent-text {
+            color: #d32f2f;
+            font-weight: 500;
+        }
+
+        .spelling-error {
+            background: #fff9c4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .footer-section {
+            background: #f5f5f5;
+            padding: 24px 32px;
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin: 16px 0;
+        }
+
+        .footer-links a {
+            color: #405de6;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .disclaimer {
+            margin-top: 16px;
+            font-size: 11px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjx0ZXh0IHg9IjE1IiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkluc3RhZ3JhbTwvdGV4dD48L3N2Zz4="
+                    alt="Instagram" class="logo" />
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="greeting">Привіт!</div>
+
+                <div class="alert-box">
+                    <div class="alert-title">🚨 ПІДОЗРІЛА АКТИВНІСТЬ ВИЯВЛЕНА</div>
+                    <div class="alert-text">Ваш акаунт може бути скомпрометовано!</div>
+                </div>
+
+                <p>
+                    Ми помітили <span class="spelling-error">незвичайну активнісь</span> на вашому акаунті Instagram
+                    @your_username.
+                    Хтось намагається отримати доступ до ваших особистих повідомлень та фотографій.
+                </p>
+
+                <div class="security-notice">
+                    <div class="notice-title">Термінове попередження безпеки</div>
+                    <div>
+                        Для захисту вашого акаунту необхідно негайно підтвердити вхід та оновити налаштування
+                        приватності.
+                    </div>
+                </div>
+
+                <div class="activity-section">
+                    <div class="activity-title">Останні підозрілі дії:</div>
+                    <div class="activity-item">
+                        📱 Новий вхід з Android пристрою <span class="suspicious">(заблоковано)</span>
+                    </div>
+                    <div class="activity-item">
+                        🌍 Спроба входу з Румунії <span class="suspicious">(підозріло)</span>
+                    </div>
+                    <div class="activity-item">
+                        📧 Спроба зміни email адреси <span class="suspicious">(заблоковано)</span>
+                    </div>
+                    <div class="activity-item">
+                        🔑 Множинні невдалі спроби входу <span class="suspicious">(5 разів)</span>
+                    </div>
+                    <div class="activity-item">
+                        📲 Запит на завантаження ваших даних <span class="suspicious">(підозріло)</span>
+                    </div>
+                </div>
+
+                <div class="urgent-notice">
+                    <div class="urgent-text">
+                        <strong>УВАГА!</strong> Якщо ви не підтвердите свою особистість протягом 2 годин,
+                        ваш акаунт буде тимчасово заморожено для захисту.
+                    </div>
+                </div>
+
+                <p>
+                    <strong>Для збереження доступу до акаунту:</strong><br>
+                    1. Підтвердьте особистість через безпечну форму<br>
+                    2. Перевірте активні сесії та пристрої<br>
+                    3. Оновіть пароль та налаштування безпеки<br>
+                    4. Перевірте налаштування приватності
+                </p>
+
+                <div class="button-section">
+                    <p style="margin-bottom: 16px; color: #262626; font-weight: bold;">Захистіть свій акаунт зараз:</p>
+                    <a href="https://instagram-secure.example.com/account/verify" class="instagram-button"
+                        target="_blank" rel="noopener noreferrer">
+                        Підтвердити акаунт Instagram
+                    </a>
+                    <div class="link-mismatch">
+                        Посилання: https://instagram.com/accounts/login
+                    </div>
+                </div>
+
+                <p>
+                    Якщо ви не розпізнаєте цю активність, це може означати, що хтось має доступ до вашого акаунту.
+                    Негайно вживайте заходів для захисту своїх особистих даних.
+                </p>
+
+                <p>
+                    <strong>Що може статися без підтвердження:</strong><br>
+                    • Втрата доступу до акаунту<br>
+                    • Несанкціоновані публікації<br>
+                    • Доступ зловмисників до особистих повідомлень<br>
+                    • Крадіжка особистих фотографій
+                </p>
+
+                <p>
+                    Дякуємо за швидку реакцію на це сповіщення безпеки.
+                </p>
+
+                <p>
+                    З повагою,<br>
+                    Команда безпеки Instagram
+                </p>
+
+                <div style="margin-top: 24px; font-size: 12px; color: #666;">
+                    ID інциденту: IG-SEC-20250909-78451<br>
+                    Час виявлення: 09 вересня 2025, 16:23 UTC
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-links">
+                    <a href="https://instagram-help.example.com" target="_blank" rel="noopener noreferrer">Центр
+                        довіри</a>
+                    <a href="https://instagram-privacy.example.com" target="_blank"
+                        rel="noopener noreferrer">Конфіденційність</a>
+                    <a href="https://instagram-terms.example.com" target="_blank" rel="noopener noreferrer">Умови</a>
+                </div>
+
+                © 2025 Instagram from Meta. Всі права захищені.<br>
+                Meta Platforms, Inc., 1 Hacker Way, Menlo Park, CA 94025, USA
+
+                <div class="disclaimer">
+                    Це автоматичне повідомлення системи безпеки. Не відповідайте на цей лист.<br>
+                    Якщо ви не запитували цю перевірку, проігноруйте це повідомлення.
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: true -->

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Державна податкова служба України</title>
+    <style>
+        .email-body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: #f8f9fa;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+        }
+
+        .header-section {
+            padding: 20px 32px;
+            background: #ffffff;
+            text-align: center;
+            border-bottom: 3px solid #4caf50;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .emblem {
+            width: 40px;
+            height: 40px;
+            background: #ffeb3b;
+            border-radius: 50%;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .org-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            text-align: center;
+        }
+
+        .org-subtitle {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 4px;
+        }
+
+        .content-section {
+            padding: 32px;
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.8;
+        }
+
+        .document-header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .document-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        .document-number {
+            font-size: 12px;
+            color: #666666;
+            font-family: 'Courier New', monospace;
+        }
+
+        .formal-greeting {
+            margin-bottom: 24px;
+            font-weight: bold;
+        }
+
+        .main-text {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .tax-details {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .tax-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 12px;
+        }
+
+        .detail-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        .detail-table td {
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .detail-label {
+            background: #f5f5f5;
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .urgent-notice {
+            background: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 4px;
+            padding: 16px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .urgent-title {
+            font-weight: bold;
+            color: #f44336;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .urgent-text {
+            color: #d32f2f;
+        }
+
+        .button-section {
+            text-align: center;
+            margin: 32px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        .gov-button {
+            background: #4caf50;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-block;
+            margin: 8px 0;
+        }
+
+        .gov-button:hover {
+            background: #45a049;
+        }
+
+        .attachment-section {
+            background: #e3f2fd;
+            border: 1px solid #2196f3;
+            border-radius: 4px;
+            padding: 16px;
+            margin: 24px 0;
+        }
+
+        .attachment-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        .attachment-link {
+            color: #1976d2;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            background: #ffffff;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #2196f3;
+            display: inline-block;
+        }
+
+        .suspicious-link {
+            font-size: 12px;
+            color: #f44336;
+            margin-top: 8px;
+        }
+
+        .formal-closing {
+            margin-top: 32px;
+            line-height: 2;
+        }
+
+        .signature {
+            margin-top: 24px;
+            font-weight: bold;
+        }
+
+        .footer-section {
+            background: #f5f5f5;
+            padding: 20px 32px;
+            font-size: 11px;
+            color: #666666;
+            text-align: center;
+            line-height: 1.5;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-info {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body class="email-body">
+    <table align="center" cellpadding="0" cellspacing="0" width="100%" class="email-container">
+        <tr>
+            <td class="header-section">
+                <div class="logo-section">
+                    <div class="emblem">🇺🇦</div>
+                    <div>
+                        <div class="org-title">ДЕРЖАВНА ПОДАТКОВА СЛУЖБА УКРАЇНИ</div>
+                        <div class="org-subtitle">Головне управління ДПС у м. Києві</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content-section">
+                <div class="document-header">
+                    <div class="document-title">ПОВІДОМЛЕННЯ ПРО НЕВРЕГУЛЬОВАНИЙ ПОДАТОК</div>
+                    <div class="document-number">№ ПП-2025/09/45678 від 09.09.2025</div>
+                </div>
+
+                <div class="formal-greeting">
+                    Шановний платнику податків!
+                </div>
+
+                <div class="main-text">
+                    На підставі статті 42 Податкового кодексу України та відповідно до результатів камеральної
+                    перевірки,
+                    проведеної контролюючим органом, повідомляємо Вас про виявлення неврегульованих податкових
+                    зобов'язань.
+                </div>
+
+                <div class="tax-details">
+                    <div class="tax-title">Деталі податкової заборгованості:</div>
+                    <table class="detail-table">
+                        <tr>
+                            <td class="detail-label">Платник податків:</td>
+                            <td>ФОП Іваненко Іван Іванович</td>
+                        </tr>
+                        <tr>
+                            <td class="detail-label">Податковий номер:</td>
+                            <td>1234567890</td>
+                        </tr>
+                        <tr>
+                            <td class="detail-label">Вид податку:</td>
+                            <td>Податок на доходи фізичних осіб</td>
+                        </tr>
+                        <tr>
+                            <td class="detail-label">Звітний період:</td>
+                            <td>I квартал 2025 року</td>
+                        </tr>
+                        <tr>
+                            <td class="detail-label">Сума до доплати:</td>
+                            <td style="color: #f44336; font-weight: bold;">15,847.50 грн</td>
+                        </tr>
+                        <tr>
+                            <td class="detail-label">Пеня:</td>
+                            <td style="color: #f44336;">2,156.33 грн</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="urgent-notice">
+                    <div class="urgent-title">ТЕРМІН ДОБРОВІЛЬНОГО ПОГАШЕННЯ</div>
+                    <div class="urgent-text">
+                        Відповідно до п. 56.18 ст. 56 ПК України, Ви маєте 3 (три) календарні дні з дати отримання
+                        цього повідомлення для добровільного погашення податкового боргу.
+                    </div>
+                </div>
+
+                <div class="main-text">
+                    У разі неврегулювання зазначених сум у встановлений термін, контролюючий орган буде вимушений
+                    застосувати заходи примусового стягнення згідно з чинним законодавством України.
+                </div>
+
+                <div class="main-text">
+                    <strong>Для врегулювання ситуації необхідно:</strong><br>
+                    1. Завантажити та підписати додаток до листа<br>
+                    2. Підтвердити особу через електронний підпис<br>
+                    3. Здійснити доплату через систему електронних платежів<br>
+                    4. Надіслати сканований документ про оплату
+                </div>
+
+                <div class="attachment-section">
+                    <div class="attachment-title">📎 Додаток до повідомлення:</div>
+                    <a href="https://taxgov-ukraine.example.com/documents/tax-report.exe" class="attachment-link"
+                        target="_blank" rel="noopener noreferrer">
+                        Payout_Document.exe
+                    </a>
+                    <div class="suspicious-link">
+                        (Увага: файл має розширення .exe - потенційна загроза безпеці!)
+                    </div>
+                </div>
+
+                <div class="button-section">
+                    <p style="margin-bottom: 16px; font-weight: bold;">Онлайн-сервіси ДПС:</p>
+                    <a href="https://taxgov-ukraine.example.com/cabinet/login" class="gov-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Електронний кабінет платника
+                    </a>
+                </div>
+
+                <div class="main-text">
+                    Додаткову інформацію можна отримати за телефоном гарячої лінії ДПС: 0 800 505 000 або
+                    через офіційний веб-сайт: tax.gov.ua
+                </div>
+
+                <div class="formal-closing">
+                    З повагою та сподіванням на розуміння,<br><br>
+
+                    <div class="signature">
+                        Начальник відділу камеральних перевірок<br>
+                        Головного управління ДПС у м. Києві<br>
+                        О.П. Сидоренко<br><br>
+
+                        Виконавець: Петренко В.А.<br>
+                        Телефон: (044) 284-48-52
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-section">
+                <div class="footer-info">
+                    Державна податкова служба України<br>
+                    04053, м. Київ, вул. Володимирська, 57<br>
+                    Телефон: (044) 521-81-71 | E-mail: public@tax.gov.ua
+                </div>
+                <div class="footer-info">
+                    Офіційний сайт: tax.gov.ua<br>
+                    Цей документ створено електронно і є чинним без підпису та печатки
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- generated for training: phishing: true -->

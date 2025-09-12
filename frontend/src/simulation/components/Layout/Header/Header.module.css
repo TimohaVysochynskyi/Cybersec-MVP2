@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(28, 34, 35, 0.15);
+  padding: 0 40px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 100%;
+}
+.email {
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+  color: #fff;
+  line-height: 100%;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.button:last-child {
+  width: 23px;
+  height: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .header {
+    height: 56px;
+    padding: 0 36px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .email {
+    font-size: 18px;
+  }
+  .controls {
+    gap: 20px;
+  }
+  .button {
+    width: 22px;
+    height: 22px;
+  }
+  .button:last-child {
+    width: 20px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    height: 52px;
+    padding: 0 32px;
+  }
+  .title {
+    font-size: 19px;
+  }
+  .email {
+    font-size: 17px;
+  }
+  .controls {
+    gap: 18px;
+  }
+  .button {
+    width: 20px;
+    height: 20px;
+  }
+  .button:last-child {
+    width: 18px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 48px;
+    padding: 0 28px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .email {
+    font-size: 16px;
+  }
+  .controls {
+    gap: 16px;
+  }
+  .button {
+    width: 18px;
+    height: 18px;
+  }
+  .button:last-child {
+    width: 16px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 44px;
+    padding: 0 24px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .email {
+    font-size: 15px;
+  }
+  .controls {
+    gap: 14px;
+  }
+  .button {
+    width: 16px;
+    height: 16px;
+  }
+  .button:last-child {
+    width: 14px;
+    height: 13px;
+  }
+}
