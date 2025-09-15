@@ -19,7 +19,7 @@
     "isPhishing": true,
     "contentPath": "/emails/2.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/amazon.png"
   },
   {
     "id": "3",
@@ -30,7 +30,7 @@
     "isPhishing": true,
     "contentPath": "/emails/3.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/work.png"
   },
   {
     "id": "4",
@@ -41,7 +41,7 @@
     "isPhishing": true,
     "contentPath": "/emails/4.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/dps.png"
   },
   {
     "id": "5",
@@ -52,7 +52,7 @@
     "isPhishing": true,
     "contentPath": "/emails/5.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/instagram.png"
   },
   {
     "id": "6",
@@ -63,7 +63,7 @@
     "isPhishing": false,
     "contentPath": "/emails/6.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/glovo.png"
   },
   {
     "id": "7",
@@ -74,7 +74,7 @@
     "isPhishing": false,
     "contentPath": "/emails/7.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/spotify.png"
   },
   {
     "id": "8",
@@ -85,7 +85,7 @@
     "isPhishing": false,
     "contentPath": "/emails/8.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/np.png"
   },
   {
     "id": "9",
@@ -96,7 +96,7 @@
     "isPhishing": true,
     "contentPath": "/emails/9.html",
     "category": "inbox",
-    "logoPath": "/logos/phishmail.png"
+    "logoPath": "/logos/privat.png"
   },
   {
     "id": "10",

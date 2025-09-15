@@ -8,16 +8,18 @@
         .email-body {
             margin: 0;
             padding: 0;
-            font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: #000000;
             line-height: 1.6;
             color: #ffffff;
         }
 
         .email-container {
-            max-width: 600px;
+            max-width: 580px;
             margin: 0 auto;
             background: #000000;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .header-section {
@@ -46,17 +48,63 @@
             color: #ffffff;
         }
 
+        .hero-section {
+            background: #121212;
+            border-radius: 8px;
+            padding: 32px 24px;
+            margin: 24px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .album-art {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #000;
+            flex-shrink: 0;
+            box-shadow: 0 4px 16px rgba(29, 185, 84, 0.3);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
         .main-title {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 18px;
             color: #1DB954;
-            margin-bottom: 24px;
-            text-align: center;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            color: #b3b3b3;
+            font-size: 14px;
+            line-height: 1.4;
         }
 
         .payment-box {
             background: #121212;
-            border: 1px solid #1DB954;
+            border: 1px solid #333333;
             border-radius: 8px;
             padding: 24px;
             margin: 24px 0;
@@ -72,7 +120,7 @@
 
         .amount {
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 700;
             color: #ffffff;
             margin: 16px 0;
         }
@@ -90,6 +138,10 @@
             justify-content: space-between;
             border-bottom: 1px solid #333333;
             padding-bottom: 8px;
+        }
+
+        .detail-row:last-child {
+            border-bottom: none;
         }
 
         .detail-label {
@@ -145,13 +197,14 @@
             color: #000000;
             padding: 16px 32px;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 24px;
             font-weight: 700;
             font-size: 16px;
             display: inline-block;
             margin: 8px 0;
             letter-spacing: 1px;
             text-transform: uppercase;
+            box-shadow: 0 4px 16px rgba(29, 185, 84, 0.3);
         }
 
         .spotify-button:hover {
@@ -216,7 +269,35 @@
             color: #1DB954;
             text-decoration: none;
         }
+
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 0 16px;
+                max-width: calc(100% - 32px);
+            }
+
+            .content-section {
+                padding: 32px 24px;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+
+            .album-art {
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+            }
+
+            .main-title {
+                font-size: 22px;
+            }
+        }
     </style>
+
 </head>
 
 <body class="email-body">
@@ -231,7 +312,17 @@
             <td class="content-section">
                 <div class="greeting">Привіт!</div>
 
-                <div class="main-title">Оплата успішно проведена</div>
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <div class="album-art">🎵</div>
+                        <div class="hero-text">
+                            <div class="main-title">Оплата успішно проведена</div>
+                            <div class="subtitle">Spotify Premium Individual</div>
+                            <div class="description">Насолоджуйтесь музикою без реклами, завантажуйте треки та слухайте
+                                навіть офлайн</div>
+                        </div>
+                    </div>
+                </div>
 
                 <p>Дякуємо за продовження підписки Spotify Premium! Ваш платіж успішно оброблено, і ви можете
                     продовжувати насолоджуватися усіма перевагами Premium без реклами.</p>
@@ -339,3 +430,4 @@
 
 </html>
 <!-- generated for training: phishing: false -->
+<!-- updated-style: brand: Spotify, unique-style: true -->
